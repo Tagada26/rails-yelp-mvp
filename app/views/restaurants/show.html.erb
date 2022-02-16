@@ -1,0 +1,7 @@
+<div class="container">
+  <h1> <%= @restaurant.name %> </h1>
+  <p> <%= @restaurant.address%> - <%= @restaurant.category%> </p>
+
+  <%= link_to "back", restaurants_path %>
+  <%= link_to "Add a review", new_restaurant_review_path(@restaurant)%>
+</div>
